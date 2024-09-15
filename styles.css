@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    text-align: center;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #4a2c77;
+    margin: 160px auto 120px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f2c300;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.leader-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #4a2c77;
+    /* background: linear-gradient(to right, #c5c6c7, #0A61C9,  #064089); */
+
+}
+
+.leader-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.leader-content img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 5px solid #f2c300;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    animation: shake 1s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.leader-content img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 1);
+}
+
+.leader-info {
+    max-width: 600px;
+    color: #ffffff; /* Witte tekst voor betere contrast */
+}
+
+.leader-info h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #f2c300; /* Goudkleurige tekst */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.leader-info h1::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #f2c300, #4a2c77);
+    border-radius: 2px;
+    z-index: -1;
+}
+
+.leader-info h1::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: radial-gradient(circle, #f2c300, transparent);
+    opacity: 0.6;
+}
+
+.leader-info p {
+    font-size: 24px;
+    color: #dcdcdc; 
+}
+
+.banner {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 16px solid #4a2c77; 
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.banner .slider {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 15%;
+    left: calc(50% - 110px);
+    transform-style: preserve-3d;
+    animation: autoRun 65s linear infinite;
+}
+
+@keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.banner .slider .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(450px);
+    margin: 10px; /* Voeg een marge toe rond elke afbeelding */
+}
+
+.banner .slider .item img {
+    width: 80px;  /* Verklein iets om ruimte te maken voor de marge */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); 
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal img {
+    max-width: 40%;
+    max-height: 40%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8); 
+    border-radius: 15px;
+    transform: scale(0.8);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.modal.active img {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.5); 
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    color: #000; 
+    transition: background 0.3s ease;
+}
+
+.modal-close:hover {
+    background: rgba(255, 255, 255, 0.7); 
+}
+
+
+
+
+.item-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4a2c77; /* Gebruik dezelfde paarse kleur als de rest van de pagina */
+    color: #f2c300; /* Goudkleurige tekst om contrast en consistentie te behouden */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Voeg een lichte gouden schaduw toe voor een subtiel effect */
+}
+
+
+.modal-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #cdd143; /* Blauw voor de link */
+    text-decoration: none;
+}
+
+.modal-link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background: #3a1d61; 
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+/* Media Queries for responsive design */
+@media (max-width: 960px) {
+    .container {
+        padding: 10px;
+    }
+
+    h4 {
+        font-size: 24px;
+        margin: 120px auto 80px;
+    }
+
+    .leader-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .leader-content img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .leader-info {
+        text-align: center;
+    }
+
+    .banner .slider {
+        width: 150px;
+        height: 150px;
+        left: calc(50% - 75px);
+    }
+
+    .banner .slider .item img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .leader-info h1 {
+        font-size: 40px;
+    }
+
+    .leader-info p {
+        font-size: 18px;
+    }
+
+    .banner .slider {
+        width: 120px;
+        height: 120px;
+        left: calc(50% - 60px);
+    }
+
+    .banner .slider .item img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
