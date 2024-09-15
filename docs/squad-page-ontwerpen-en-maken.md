@@ -33,7 +33,7 @@ Jullie gaan als team 1 website maken. Jullie maken 1 ontwerp, je werkt soms in j
 #### 3. Team Canvas invullen
 
 Als je in een team gaat werken, is het belangrijk om afspraken te maken over de samenwerking, zodat alle teamleden goed op één lijn zitten. 
-Vul met jouw team een [Team Canvas](https://theteamcanvas.com/) in om een goed vertrekpunt voor jouw teamproject te hebben. Voor het invullen van het Team Canvas is een Workshop met uitleg beschikbaar. 
+Vul met jouw team een Team Canvas in om een goed vertrekpunt voor jouw teamproject te hebben. Voor het invullen van het Team Canvas is een Workshop met uitleg beschikbaar. 
 
 #### Bronnen Team Canvas invullen
 
@@ -70,7 +70,7 @@ Eerst ga je met je team de visitekaartjes uit je squad bekijken en inspiratie zo
 
 Op jullie website komen ook interessante plekken op de [Amstelcampus](https://www.hva.nl/locaties/campus/amstelcampus.html) van de HvA. Hiervoor gaan jullie eerst de Amstelcampus onderzoeken! Waar kan je goed werken met een team in de middag? Waar kun je lekker eten? Waar kun je bidden? Waar kun je met een frisbee gooien? Waar is het mooiste uitzicht? Ga met je team rondlopen en schrijf de plekken op.
 
-Er is een mooie werkplek op de 3e verdieping bij CMD, de Medialounge, en in het Kohnstammhuis (KSH) is een "Broedplaats" op de 1e verdieping naast de bibliotheek. Er zijn verschillende plekken waar je koffie kan halen, in het Jakoba Mulderhuis (JMH), in het Benno Premselahuis (BPH) en in het Wibauthuis (WBH), daar is ook een restaurant. Er is een voerbalveldje. Een gymzaal. En vlak in de buurt een supermarkt, de Coffee Company, Bagels and Beans, ... Waar zijn nog meer interessante plekken op de Amstelcampus om te hangen of om te werken?
+Er is een mooie werkplek op de 3e verdieping bij CMD, de Medialounge, en in het Kohnstammhuis (KSH) is een "Broedplaats" op de 1e verdieping naast de bibliotheek. Er zijn verschillende plekken waar je koffie kan halen, in het Jakoba Mulderhuis (JMH), in het Benno Premselahuis (BPH) en in het Wibauthuis (WBH), daar is ook een restaurant. Er is een voetbalveldje. Een gymzaal. En vlak in de buurt een supermarkt, de Coffee Company, Bagels and Beans, ... Waar zijn nog meer interessante plekken op de Amstelcampus om te hangen of om te werken?
 
 
 #### 4. Schetsen en breakdown
@@ -95,7 +95,7 @@ Nu je (ongeveer) weet wat je op jullie squadpagina kan tonen, ga je schetsen en 
 
 In de bouwfase realiseer je de beslissingen uit de ontwerpfase in HTML, CSS en JS.
 
-Op basis van je ontwerpschets kan je beginnen met de content in HTML. In eerste instantie bouwen alle teamleden dezelfde pagina's. Bespreek met je team hoe je conflicten gaat voorkomen, aangezien je in dezelfde _repository_ werkt. Later kunnen jullie de code samenbrengen. 
+Op basis van je ontwerpschets kan je beginnen met de content in HTML. In eerste instantie bouwen alle teamleden dezelfde pagina('s) individueel. Bespreek met je team hoe je conflicten gaat voorkomen, aangezien je wel in dezelfde _repository_ werkt. Volgende week kunnen jullie de code samenbrengen.
 
 #### Aanpak bouwfase
 
