@@ -1,17 +1,13 @@
 # Your Tribe - Squadpage
 
 ## Visuele Hiërarchie
-
-Visuele hiërarchie toepassen in je ontwerp en met je team ideeën uitwerken in Figma
-
 _In de workshop S01W3-01-Visuele-hierarchie wordt uitgelegd wat visuele hiërarchie is en hoe je dit kan toepassen in je ontwerp._
-
 
 Visuele hiërarchie is belangrijk in webdesign. Het vertelt mensen waar ze moeten kijken en welke dingen op het scherm het belangrijkst zijn. 
 Joshua Porter schrijft in zijn artikel over _principles of user interface design_: 
 > A strong visual hierarchy is achieved when there is a clear viewing order to the visual elements on a screen. Most people don't notice visual hierarchy but it is one of the easiest ways to strengthen (or weaken) a design
 
-Voordat je met visuele hiërarchie variaties gaat maken van je ontwerp, gaan we eerst wat oefeningen doen om Figma te leren.
+Voordat je met visuele hiërarchie gaat ontwerpen, gaan we eerst wat oefeningen doen om Figma te leren.
 
 
 
@@ -27,14 +23,12 @@ Ga naar de 'page' met een aantal beginners oefeningen over vormen, volgorde en g
 
 ![image](https://github.com/user-attachments/assets/2b24f983-9d25-4314-96be-c2f35ee9dc36)
 
-
 ### Frames, grids en uitlijnen
 In Figma werk je met frames (artboards), een frame stelt over het algemeen één scherm voor, voor continuïteit is het handig om gridlijnen toe te voegen zodat je dezelfde spacing aanhoudt over je hele ontwerp.
 
 Ga naar de 'page' met oefeningen over het werken met frames, grids en uitlijnen en voer de oefenigen uit. 
 
 ![image](https://github.com/user-attachments/assets/217c21c6-e07c-46df-a45b-6521133b3205)
-
 
 ### Bronnen om Figma te leren
 
@@ -56,13 +50,12 @@ Maak met je team verschillende variaties van jullie squad page ontwerp in Figma,
 Visuele hiërarchie kun je op verschillende manieren bereiken, zoals grootte van tekst of elementen, gebruik van kleur en contrast, en witruime en positie van elementen op het scherm. In deze workshop ga je leren wat visuele hiërarchie is en hoe je het kunt gebruiken om met je team verschillende variaties van jullie website te maken. 
 
 ### Belangrijkste informatie, belangrijke details en achtergrondinformatie 
-Eerst ga je met je team jullie ontwerp in Figma maken. 
+Eerst ga je met je team jullie ontwerp in Figma maken en de 3 niveau's van visuele hiërarchie bepalen.
 
-1. Maak jullie ontwerp na in Figma. Zorg dat je met je team in hetzelfde document werkt.
+1. Maak een nieuw document aan in Figma en maak jullie ontwerp na. Zorg dat je met je team in hetzelfde document werkt. (als jullie al een ontwerp in Figma hebben kan je deze stap overslaan)
 2. Bepaal met je team de 3 niveau's van visuele hiërarchie van jullie ontwerp en maak aantekeningen in Figma. Wat moeten mensen als eerste zien? Geef in het Figma file aan wat de belangrijkste informatie is, wat belangrijke details zijn en wat achtergrondinformatie is.
 
 ![image](https://github.com/user-attachments/assets/753332c2-78a0-4dbe-bb7f-39dba76f8184)
-
 _De 3 niveau's van visuele hiërarchie volgens de “The inverted pyramid of writing”, belangrijkste informatie, belangrijke details en achtergrondinformatie_
 
 
@@ -75,33 +68,25 @@ _De tekst "Beleef samen een spectaculair dagje uit" valt erg op, het is veel gro
 1. Elke teamlid gaat minimaal 3 versies maken door te variëren met de grootte van teksten en elementen
 2. Dupliceer per versie het frame in Figma
 
-
-
 ### Visuele hiërarchie ontwerpen door kleur/contrast
 Door een onderdeel van je ontwerp een hoger kleuren-contrast te geven dan andere valt het meer op. 
-
-1. Elke teamlid maakt minimaal 3 verschillende versies waarbij je met kleur en contrast belangrijkste informatie meer contrast geeft dan details.
-2. Dupliceer per versie het frame in Figma
 
 ![image](https://github.com/user-attachments/assets/1aebd071-acfd-4f55-bf87-399888e2068f) 
 _De tekst "Waar wil je heen?" valt als eerste op door het kleur contrast wit op groen, daarna de roze button met 'Zoeken'_
 
-
-
+1. Elke teamlid maakt minimaal 3 verschillende versies waarbij je met kleur en contrast belangrijkste informatie meer contrast geeft dan details.
+2. Dupliceer per versie het frame in Figma
 
 ### Visuele hiërarchie ontwerpen door witruimte en positie
 Als tekst of elementen veel witruimte hebben en los staan van andere onderdelen op de pagina vallen ze op. 
 
-1.  Elke teamlid maakt minimaal 3 verschillende versies waarbij belangrijke informatie meer witruimte  krijgt en het op een andere plek op de pagina staat dan details en achtergorndinformatie. 
-2. Dupliceer per versie het frame in Figma
-
 ![image](https://github.com/user-attachments/assets/26f77bf0-d9b7-4e37-ad47-1213e867385b) 
 _De tekst "In welke attractie ga jij als eerst?" en de button "Ontdek alle attracties" vallen op omdat ze links op de pagina staan met veel witruimte_ 
 
+1.  Elke teamlid maakt minimaal 3 verschillende versies waarbij belangrijke informatie meer witruimte  krijgt en het op een andere plek op de pagina staat dan details en achtergorndinformatie. 
+2. Dupliceer per versie het frame in Figma
 
-
-
-### Variaties bespreken
+### Variaties bespreken en een nieuw ontwerp maken
 Door te experimenteren en verschillende variaties te maken en bespreken met je team kom je tot nieuwe ontwerp-ideeën. Dat noemen we divergeren en convergeren. Tijdens het _divergeren_ maak je veel variaties, tijdens het _convergeren_ ga je de variaties bespreken en maak je keuzes om tot een nieuw ontwerp te komen. 
 
 ![image](https://github.com/user-attachments/assets/693625cb-0c55-4bc7-87f9-cdc9c0402e02)

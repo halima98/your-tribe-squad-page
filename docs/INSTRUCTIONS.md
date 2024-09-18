@@ -25,8 +25,8 @@ Deze leertaak wordt behandeld in week 2 en 3 van sprint 1. Er worden verschillen
 - [Team canvas](team-canvas.md) - Maandag
 - [Responsive Design](responsive-design.md) - Woensdag
 - [Code/Design review squadpage](code-design-review-squadpage.md) - Vrijdag
-- [Visuele Hiërarchie](visuele-hierarchie.md) - Week 2
-
+- [Visuele Hiërarchie](visuele-hierarchie.md) - Maandag week 2
+- [Wrap Up](wrap-up.md) - Woensdag week 2
 
 ## Definition of Done
 
@@ -39,12 +39,5 @@ Deze opdracht is done als:
 - [ ] Je hebt verschillende schetsen gemaakt voor het responsive ontwerp en met een media-query verschillende layouts gemaakt en feedback gekregen in Github Issues
 - [ ] Je hebt verschillende variaties geschetst voor de layout en de visuele hiërachie en feedback gekregen in Github Issues
 - [ ] Je hebt het ontwerp gerealiseerd met HTML, CSS en/of JS, je hebt code uitgelegd en feedback gekregen in Github Issues
-
-<!-- 
-- [ ] Je hebt een media query gebruikt en in de code de media-query uitgelegd
-- [ ] Je hebt verschillende schetsen gemaakt gevarieerd, per schets is beschreven hoe de visuele hierarchie is toegepast
--->
-
-
 
 
