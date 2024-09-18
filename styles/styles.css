@@ -1,0 +1,620 @@
+/* Import Google Font 'Roboto' */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Algemene instellingen voor het lichaam van de pagina */
+body {
+    font-family: 'Roboto', sans-serif; /* Gebruik 'Roboto' als lettertype */
+    margin: 0; /* Verwijder standaard marge */
+    padding: 0; /* Verwijder standaard padding */
+    box-sizing: border-box; /* Inclusief padding en border in de breedte en hoogte van elementen */
+    background-color: #121212; /* Donkere achtergrondkleur */
+    color: #e0e0e0; /* Lichtgrijze tekstkleur */
+}
+
+/* Center uitlijning voor de container */
+.container {
+    text-align: center;
+}
+
+/* Stijl voor h4-elementen */
+h4 {
+    font-size: 26px; /* Lettergrootte */
+    font-weight: 500; /* Lettertype dikte */
+    color: #fff; /* Witte tekstkleur */
+    margin: 140px auto 100px; /* Marges boven, onder en aan de zijkanten */
+    letter-spacing: 5px; /* Ruimte tussen letters */
+    text-transform: uppercase; /* Hoofdletters */
+}
+
+/* Animatie voor 3D rotatie */
+@keyframes autoRun {
+    from { transform: perspective(1000px) rotateY(0deg); }
+    to { transform: perspective(1000px) rotateY(360deg); }
+}
+
+/* Stijl voor de banner */
+.banner {
+    width: 100%; /* Volledige breedte */
+    height: 50vh; /* 50% van de viewport hoogte */
+    text-align: center; /* Center uitlijning van tekst */
+    overflow: hidden; /* Verberg overloop van inhoud */
+    position: relative; /* Positionering ten opzichte van de parent */
+    background-size: cover; /* Achtergrondafbeelding volledig bedekken */
+    background-position: center; /* Achtergrondafbeelding centreren */
+    border-bottom: 16px solid #3d1a5d; /* Paarse rand onderaan */
+}
+
+/* Slider in de banner met 3D animatie */
+.banner .slider {
+    position: absolute; /* Absolute positionering */
+    width: 200px; /* Breedte van de slider */
+    height: 200px; /* Hoogte van de slider */
+    top: 15%; /* Positionering van de bovenkant */
+    left: calc(50% - 110px); /* Horizontale centrering */
+    transform-style: preserve-3d; /* 3D-transformatie behouden */
+    animation: autoRun 70s linear infinite; /* Continue 3D rotatie animatie */
+}
+
+/* Items in de slider */
+.banner .slider .item {
+    position: absolute; /* Absolute positionering */
+    inset: 0; /* Vul de container */
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(450px); /* Rotatie en 3D verplaatsing */
+    margin: 10px; /* Marges rond elk item */
+}
+
+/* Afbeeldingen in de slider items */
+.banner .slider .item img {
+    width: 80px; /* Breedte van de afbeelding */
+    height: 80px; /* Hoogte van de afbeelding */
+    object-fit: cover; /* Afbeelding bedekken zonder vervorming */
+    border-radius: 10px; /* Afgeronde hoeken */
+    cursor: pointer; /* Cursor veranderen naar pointer bij hover */
+}
+
+/* Stijl voor modals */
+.modal {
+    display: none; /* Standaard niet zichtbaar */
+    position: fixed; /* Vaste positionering */
+    z-index: 100; /* Z-index voor bovenop andere elementen */
+    left: 0;
+    top: 0;
+    width: 100%; /* Volledige breedte */
+    height: 100%; /* Volledige hoogte */
+    background-color: rgba(0, 0, 0, 0.9); /* Donkere semi-transparante achtergrond */
+    justify-content: center; /* Center uitlijning van inhoud */
+    align-items: center; /* Verticaal centreren van inhoud */
+    opacity: 0; /* Verborgen */
+    transition: opacity 0.4s ease-in-out; /* Overgang voor zichtbaarheid */
+}
+
+/* Actieve modal stijl */
+.modal.active {
+    display: flex; /* Flexbox gebruiken om de inhoud te centreren */
+    opacity: 1; /* Zichtbaar maken */
+}
+
+/* Afbeeldingen in modals */
+.modal img {
+    max-width: 40%; /* Maximale breedte van de afbeelding */
+    max-height: 40%; /* Maximale hoogte van de afbeelding */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8); /* Schaduw rond de afbeelding */
+    border-radius: 15px; /* Afgeronde hoeken */
+    transform: scale(0.8); /* Begin met verkleinen */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Overgangseffecten */
+    opacity: 0; /* Verborgen */
+}
+
+/* Actieve modal afbeelding stijl */
+.modal.active img {
+    transform: scale(1); /* Normale grootte */
+    opacity: 1; /* Zichtbaar maken */
+}
+
+/* Sluitknop voor modals */
+.modal-close {
+    position: absolute; /* Absolute positionering */
+    top: 20px; /* Afstand van de bovenkant */
+    right: 20px; /* Afstand van de rechterkant */
+    background: rgba(0, 0, 0, 0.6); /* Donkere achtergrond */
+    padding: 10px; /* Padding rond de knop */
+    border-radius: 50%; /* Ronde knop */
+    cursor: pointer; /* Cursor veranderen naar pointer bij hover */
+    font-size: 24px; /* Lettergrootte van het symbool */
+    color: #f5c300; /* Gele tekstkleur */
+    transition: background 0.3s ease; /* Overgangseffect voor achtergrondkleur */
+}
+
+/* Hover effect voor de sluitknop */
+.modal-close:hover {
+    background: rgba(0, 0, 0, 0.8); /* Donkere achtergrond bij hover */
+}
+
+/* Naam van het item op de afbeelding */
+.item-name {
+    position: absolute; /* Absolute positionering */
+    bottom: 10px; /* Afstand van de onderkant */
+    left: 50%; /* Horizontaal gecentreerd */
+    transform: translateX(-50%); /* Horizontaal centreren */
+    background-color: #3d1a5d; /* Paarse achtergrondkleur */
+    color: #fff; /* Witte tekstkleur */
+    padding: 5px 10px; /* Padding rond de tekst */
+    border-radius: 5px; /* Afgeronde hoeken */
+    font-size: 14px; /* Lettergrootte */
+    text-align: center; /* Center uitlijning van tekst */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Schaduw rond de tekst */
+}
+
+/* Link in de modal */
+.modal-link {
+    display: block; /* Block-weergave */
+    margin-top: 10px; /* Marges boven de link */
+    text-align: center; /* Center uitlijning van tekst */
+    font-size: 16px; /* Lettergrootte */
+    color: #e0e0e0; /* Lichtgrijze tekstkleur */
+    text-decoration: none; /* Geen onderlijn */
+}
+
+/* Hover effect voor de link in de modal */
+.modal-link:hover {
+    text-decoration: underline; /* Onderlijn bij hover */
+}
+
+/* Stijl voor h2-elementen */
+h2 {
+    position: relative; /* Relatieve positionering */
+    font-size: 5.5em; /* Grote lettergrootte */
+    letter-spacing: 10px; /* Ruimte tussen letters */
+    color: #f5c300; /* Gele tekstkleur */
+    text-transform: uppercase; /* Hoofdletters */
+    width: 100%; /* Volledige breedte */
+    text-align: center; /* Center uitlijning van tekst */
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004); /* Reflectie-effect voor Webkit-browsers */
+    line-height: 0.80em; /* Regelhoogte */
+    animation: animate 5s linear infinite; /* Continue animatie */
+    top: -200px; /* Verplaatsing naar boven */
+    margin-left: 100px; /* Horizontale marge */
+}
+
+/* Animatie voor h2-elementen */
+@keyframes animate {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+        color: #f5c300; /* Gele tekstkleur */
+        text-shadow: none; /* Geen schaduw */
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+        color: #3d1a5d; /* Paarse tekstkleur */
+        text-shadow:
+            0 0 20px #fff, /* Witte schaduw */
+            0 0 40px #fff, /* Witte schaduw */
+            0 0 800px #fff, /* Witte schaduw */
+            0 0 160px #fff; /* Witte schaduw */
+    }
+}
+
+/* Sectie voor knoppen */
+.buttons-section {
+    text-align: center; /* Center uitlijning van tekst */
+    margin-top: 100px; /* Marges boven */
+    margin-bottom: 50px; /* Marges onder */
+}
+
+/* Stijl voor knoppen */
+.button {
+    position: relative; /* Relatieve positionering */
+    display: inline-block; /* Inline-block weergave */
+    padding: 15px 30px; /* Padding rond de knop */
+    margin: 10px; /* Marges rond de knop */
+    text-decoration: none; /* Geen onderlijn */
+    text-transform: uppercase; /* Hoofdletters */
+    overflow: hidden; /* Verberg overloop */
+    letter-spacing: 3px; /* Ruimte tussen letters */
+    font-size: 14px; /* Lettergrootte */
+    color: #fff; /* Witte tekstkleur */
+    background-color: rgba(51, 51, 51, 0.2); /* Transparant grijs achtergrondkleur */
+    border: 2px solid #6a0dad; /* Paarse rand */
+    cursor: pointer; /* Cursor veranderen naar pointer bij hover */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Overgangseffecten */
+}
+
+/* Hover effect voor knoppen */
+.button:hover {
+    color: #6a0dad; /* Paarse tekstkleur bij hover */
+    background-color: rgba(106, 13, 173, 0.1); /* Lichtpaarse achtergrond bij hover */
+    box-shadow: 0 0 10px rgba(106, 13, 173, 0.3); /* Subtiele paarse schaduw bij hover */
+}
+
+/* Styling voor knopinhoud met animatie */
+.button span {
+    position: relative; /* Relatieve positionering */
+    display: inline-block; /* Inline-block weergave */
+    z-index: 1; /* Z-index om bovenop andere elementen te liggen */
+}
+
+/* Gradient animatie boven en onder knoppen */
+.button span::before, .button span::after {
+    content: ''; /* Geen inhoud */
+    position: absolute; /* Absolute positionering */
+    background: linear-gradient(90deg, transparent, #8a2be2); /* Paarse gradient */
+}
+
+/* Gradient animatie boven de knop */
+.button span::before {
+    top: 0; /* Aan de bovenkant */
+    left: -100%; /* Begin buiten de knop */
+    width: 100%; /* Volledige breedte */
+    height: 2px; /* Hoogte van de gradient */
+    background: linear-gradient(90deg, transparent, #6a0dad); /* Paarse gradient */
+    animation: animate1 1s linear infinite; /* Continue animatie */
+}
+
+/* Gradient animatie aan de zijkant van de knop */
+.button span::after {
+    top: -100%; /* Begin buiten de knop */
+    right: 0; /* Aan de rechterkant */
+    width: 2px; /* Breedte van de gradient */
+    height: 100%; /* Volledige hoogte */
+    background: linear-gradient(180deg, transparent, #8a2be2); /* Paarse gradient */
+    animation: animate2 2s linear infinite; /* Continue animatie */
+    animation-delay: 0.25s; /* Vertraging voor de animatie */
+}
+
+/* Animaties voor de gradient */
+@keyframes animate1 {
+    0% { left: -100%; }
+    50%, 100% { left: 100%; }
+}
+
+@keyframes animate2 {
+    0% { top: -100%; }
+    50%, 100% { top: 100%; }
+}
+
+/* Gradient animatie onder de knop */
+.button::before {
+    content: ''; /* Geen inhoud */
+    position: absolute; /* Absolute positionering */
+    bottom: 0; /* Aan de onderkant */
+    right: -100%; /* Begin buiten de knop */
+    width: 100%; /* Volledige breedte */
+    height: 2px; /* Hoogte van de gradient */
+    background: linear-gradient(270deg, transparent, #8a2be2); /* Paarse gradient */
+    animation: animate3 1s linear infinite; /* Continue animatie */
+    animation-delay: 0.5s; /* Vertraging voor de animatie */
+}
+
+/* Gradient animatie aan de zijkant van de knop */
+@keyframes animate3 {
+    0% { right: -100%; }
+    50%, 100% { right: 100%; }
+}
+
+/* Gradient animatie aan de zijkant van de knop */
+.button::after {
+    content: ''; /* Geen inhoud */
+    position: absolute; /* Absolute positionering */
+    bottom: -100%; /* Begin buiten de knop */
+    left: 0; /* Aan de linkerkant */
+    width: 2px; /* Breedte van de gradient */
+    height: 100%; /* Volledige hoogte */
+    background: linear-gradient(360deg, transparent, #8a2be2); /* Paarse gradient */
+    animation: animate4 2s linear infinite; /* Continue animatie */
+    animation-delay: 0.75s; /* Vertraging voor de animatie */
+}
+
+/* Gradient animatie aan de zijkant van de knop */
+@keyframes animate4 {
+    0% { bottom: -100%; }
+    50%, 100% { bottom: 100%; }
+}
+
+/* Media Queries voor responsief ontwerp */
+@media (max-width: 960px) {
+    .button {
+        padding: 12px 24px; /* Kleinere padding voor kleinere schermen */
+        font-size: 12px; /* Kleinere lettergrootte */
+    }
+}
+
+/* Media Queries voor zeer kleine schermen */
+@media (max-width: 600px) {
+    .button {
+        padding: 10px 20px; /* Nog kleinere padding */
+        font-size: 10px; /* Nog kleinere lettergrootte */
+    }
+}
+
+/* Sectie voor leiders */
+.leader-section {
+    padding: 60px 0; /* Padding boven en onder */
+    background-color: #1c1c1c; /* Donkere achtergrondkleur */
+}
+
+/* Inhoud van de leider sectie */
+.leader-content {
+    display: flex; /* Flexbox voor uitlijning */
+    align-items: center; /* Verticaal centreren */
+    max-width: 1200px; /* Maximale breedte */
+    margin: auto; /* Horizontaal centreren */
+    padding: 0 20px; /* Padding aan de zijkanten */
+}
+
+/* Afbeeldingen in de leider sectie */
+.leader-content img {
+    width: 250px; /* Breedte van de afbeelding */
+    height: 250px; /* Hoogte van de afbeelding */
+    object-fit: cover; /* Afbeelding bedekken zonder vervorming */
+    border-radius: 50%; /* Ronde afbeelding */
+    margin-right: 20px; /* Marges rechts van de afbeelding */
+    border: 5px solid #d3bc5c; /* Gouden rand rond de afbeelding */
+}
+
+/* Informatie over de leider */
+.leader-info h1 {
+    font-size: 58px; /* Grote lettergrootte */
+    font-weight: 700; /* Dikke tekst */
+    color: #f5c300; /* Gele tekstkleur */
+    letter-spacing: 5px; /* Ruimte tussen letters */
+    text-transform: uppercase; /* Hoofdletters */
+    text-align: center; /* Center uitlijning van tekst */
+    margin: 0; /* Geen marges */
+    padding: 20px 0; /* Padding boven en onder */
+}
+
+/* Paragraaf tekst in de leider sectie */
+.leader-info p {
+    font-size: 22px; /* Lettergrootte */
+    color: #dcdcdc; /* Lichtgrijze tekstkleur */
+    text-align: center; /* Center uitlijning van tekst */
+    margin-top: 20px; /* Marges boven */
+}
+
+/* Introductie sectie */
+.intro-section {
+    text-align: center; /* Center uitlijning van tekst */
+    color: white; /* Witte tekstkleur */
+    padding: 60px 20px; /* Padding boven en onder, en aan de zijkanten */
+    width: 100%; /* Volledige breedte */
+    animation: fadeInDown 1s ease-out; /* Fade-in animatie */
+}
+
+/* Titel in de introductie sectie */
+.intro-section h1 {
+    font-size: 2.8rem; /* Lettergrootte */
+    margin-bottom: 20px; /* Marges onder de titel */
+    animation: slideInLeft 1.5s ease-out; /* Slide-in animatie */
+}
+
+/* Paragraaf tekst in de introductie sectie */
+.intro-section p {
+    font-size: 1.2rem; /* Lettergrootte */
+    max-width: 800px; /* Maximale breedte */
+    margin: 0 auto; /* Horizontaal centreren */
+    line-height: 1.6; /* Regelhoogte */
+    animation: fadeInUp 1.5s ease-out; /* Fade-in animatie */
+}
+
+/* Grid container voor grid-items */
+.grid-container {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
+    gap: 20px; /* Ruimte tussen items */
+    padding: 40px; /* Padding rond de grid */
+    max-width: 1200px; /* Maximale breedte */
+    width: 100%; /* Volledige breedte */
+    animation: fadeIn 1.5s ease-out; /* Fade-in animatie */
+    margin: 0 auto; /* Auto-marges aan beide zijden om horizontaal te centreren */
+}
+
+
+/* Grid-items */
+.grid-item {
+    position: relative; /* Relatieve positionering */
+    background-color: white; /* Witte achtergrondkleur */
+    border-radius: 15px; /* Afgeronde hoeken */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Schaduw */
+    overflow: hidden; /* Verberg overloop */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Overgangseffecten */
+    display: flex; /* Flexbox voor inhoud */
+    flex-direction: column; /* Kolomopstelling */
+    text-align: center; /* Center uitlijning van tekst */
+}
+
+/* Hover effect voor grid-items */
+.grid-item:hover {
+    transform: scale(1.05); /* Vergroot bij hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Versterkte schaduw bij hover */
+}
+
+/* Afbeeldingen in grid-items */
+.grid-item img {
+    width: 100%; /* Volledige breedte */
+    height: 250px; /* Hoogte van de afbeelding */
+    object-fit: cover; /* Afbeelding bedekken zonder vervorming */
+    transition: opacity 0.3s ease; /* Overgangseffect voor opacity */
+}
+
+/* Hover effect voor afbeeldingen in grid-items */
+.grid-item img:hover {
+    opacity: 0.85; /* Verander opacity bij hover */
+}
+
+/* Tekstinhoud in grid-items */
+.text-content {
+    position: relative; /* Relatieve positionering */
+    padding: 20px; /* Padding rond de tekst */
+    z-index: 1; /* Z-index om bovenop andere elementen te liggen */
+    color: white; /* Witte tekstkleur */
+    background-color: #3d1a5d; /* Paarse achtergrondkleur */
+    transition: background-color 2s ease-in-out; /* Overgangseffect voor achtergrondkleur */
+}
+
+/* Animatie voor achtergrondkleur verandering */
+.purple-to-yellow .text-content {
+    animation: backgroundColorChangePurpleToYellow 6s infinite alternate; /* Continue animatie */
+}
+
+.yellow-to-purple .text-content {
+    animation: backgroundColorChangeYellowToPurple 6s infinite alternate; /* Continue animatie */
+}
+
+/* Achtergrondkleur verandering animatie van paars naar geel */
+@keyframes backgroundColorChangePurpleToYellow {
+    from {
+        background-color: rgba(61, 26, 93, 0.9); /* Paars */
+    }
+    to {
+        background-color: rgba(245, 195, 0, 0.9); /* Geel */
+    }
+}
+
+/* Achtergrondkleur verandering animatie van geel naar paars */
+@keyframes backgroundColorChangeYellowToPurple {
+    from {
+        background-color: rgba(245, 195, 0, 0.9); /* Geel */
+    }
+    to {
+        background-color: rgba(61, 26, 93, 0.9); /* Paars */
+    }
+}
+
+/* Fade-in animaties */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Center uitlijning van tekst */
+    padding: 20px; /* Padding rondom */
+    background-color: #1c1c1c; /* Donkere achtergrondkleur */
+    color: #e0e0e0; /* Lichtgrijze tekstkleur */
+}
+/* Media Queries voor responsief ontwerp */
+
+/* Voor schermen kleiner dan 960px */
+@media (max-width: 960px) {
+    .button {
+        padding: 12px 24px; /* Kleinere padding voor kleinere schermen */
+        font-size: 12px; /* Kleinere lettergrootte */
+    }
+
+    .intro-section {
+        padding: 40px 10px; /* Kleinere padding voor de introductie sectie */
+    }
+
+    .intro-section h1 {
+        font-size: 2.2rem; /* Kleinere lettergrootte voor de titel */
+    }
+
+    .intro-section p {
+        font-size: 1rem; /* Kleinere lettergrootte voor de paragraaf tekst */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Eén kolom layout voor kleinere schermen */
+        padding: 20px; /* Kleinere padding */
+    }
+
+    .grid-item {
+        margin-bottom: 20px; /* Marges onder de grid-items */
+    }
+
+    .grid-item img {
+        height: auto; /* Automatische hoogte voor afbeeldingen */
+    }
+
+    .button {
+        padding: 12px 24px; /* Kleinere padding voor knoppen */
+        font-size: 12px; /* Kleinere lettergrootte */
+    }
+
+    h2 {
+        font-size: 4em; /* Kleinere lettergrootte voor h2 */
+        letter-spacing: 8px; /* Kleinere letterafstand */
+        margin-left: 50px; /* Kleinere marge aan de linkerkant */
+        top: -150px; /* Kleinere verticale verplaatsing */
+    }
+}
+
+/* Voor schermen kleiner dan 600px */
+@media (max-width: 600px) {
+    .button {
+        padding: 10px 20px; /* Nog kleinere padding voor zeer kleine schermen */
+        font-size: 10px; /* Nog kleinere lettergrootte */
+    }
+
+    .intro-section {
+        padding: 20px 10px; /* Nog kleinere padding voor de introductie sectie */
+    }
+
+    .intro-section h1 {
+        font-size: 1.8rem; /* Nog kleinere lettergrootte voor de titel */
+    }
+
+    .intro-section p {
+        font-size: 0.9rem; /* Nog kleinere lettergrootte voor de paragraaf tekst */
+    }
+
+    .grid-container {
+        padding: 10px; /* Nog kleinere padding */
+    }
+
+    .grid-item {
+        margin-bottom: 15px; /* Nog kleinere marges onder de grid-items */
+    }
+
+    .grid-item img {
+        height: auto; /* Automatische hoogte voor afbeeldingen */
+    }
+
+    .button {
+        padding: 10px 20px; /* Nog kleinere padding voor knoppen */
+        font-size: 10px; /* Nog kleinere lettergrootte */
+    }
+
+    h2 {
+        font-size: 3em; /* Nog kleinere lettergrootte voor h2 */
+        letter-spacing: 6px; /* Nog kleinere letterafstand */
+        margin-left: 20px; /* Nog kleinere marge aan de linkerkant */
+        top: -100px; /* Nog kleinere verticale verplaatsing */
+    }
+}
