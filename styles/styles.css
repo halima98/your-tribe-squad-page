@@ -41,7 +41,6 @@ h4 {
     position: relative; /* Positionering ten opzichte van de parent */
     background-size: cover; /* Achtergrondafbeelding volledig bedekken */
     background-position: center; /* Achtergrondafbeelding centreren */
-    border-bottom: 16px solid #3d1a5d; /* Paarse rand onderaan */
 }
 
 /* Slider in de banner met 3D animatie */
@@ -521,13 +520,6 @@ h2 {
     }
 }
 
-/* Footer */
-footer {
-    text-align: center; /* Center uitlijning van tekst */
-    padding: 20px; /* Padding rondom */
-    background-color: #1c1c1c; /* Donkere achtergrondkleur */
-    color: #e0e0e0; /* Lichtgrijze tekstkleur */
-}
 /* Media Queries voor responsief ontwerp */
 
 /* Voor schermen kleiner dan 960px */
