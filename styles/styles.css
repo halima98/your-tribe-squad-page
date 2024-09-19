@@ -323,50 +323,8 @@ h2 {
     }
 }
 
-/* Sectie voor leiders */
-.leader-section {
-    padding: 60px 0; /* Padding boven en onder */
-    background-color: #1c1c1c; /* Donkere achtergrondkleur */
-}
 
-/* Inhoud van de leider sectie */
-.leader-content {
-    display: flex; /* Flexbox voor uitlijning */
-    align-items: center; /* Verticaal centreren */
-    max-width: 1200px; /* Maximale breedte */
-    margin: auto; /* Horizontaal centreren */
-    padding: 0 20px; /* Padding aan de zijkanten */
-}
 
-/* Afbeeldingen in de leider sectie */
-.leader-content img {
-    width: 250px; /* Breedte van de afbeelding */
-    height: 250px; /* Hoogte van de afbeelding */
-    object-fit: cover; /* Afbeelding bedekken zonder vervorming */
-    border-radius: 50%; /* Ronde afbeelding */
-    margin-right: 20px; /* Marges rechts van de afbeelding */
-    border: 5px solid #d3bc5c; /* Gouden rand rond de afbeelding */
-}
-
-/* Informatie over de leider */
-.leader-info h1 {
-    font-size: 58px; /* Grote lettergrootte */
-    font-weight: 700; /* Dikke tekst */
-    color: #f5c300; /* Gele tekstkleur */
-    letter-spacing: 5px; /* Ruimte tussen letters */
-    text-transform: uppercase; /* Hoofdletters */
-    text-align: center; /* Center uitlijning van tekst */
-    margin: 0; /* Geen marges */
-    padding: 20px 0; /* Padding boven en onder */
-}
-
-/* Paragraaf tekst in de leider sectie */
-.leader-info p {
-    font-size: 22px; /* Lettergrootte */
-    color: #dcdcdc; /* Lichtgrijze tekstkleur */
-    text-align: center; /* Center uitlijning van tekst */
-    margin-top: 20px; /* Marges boven */
-}
 
 /* Introductie sectie */
 .intro-section {
