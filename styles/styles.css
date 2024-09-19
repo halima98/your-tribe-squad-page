@@ -357,8 +357,7 @@ h2 {
     grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
     gap: 20px; /* Ruimte tussen items */
     padding: 40px; /* Padding rond de grid */
-    max-width: 1200px; /* Maximale breedte */
-    width: 100%; /* Volledige breedte */
+    width: 80%; /* Volledige breedte */
     animation: fadeIn 1.5s ease-out; /* Fade-in animatie */
     margin: 0 auto; /* Auto-marges aan beide zijden om horizontaal te centreren */
 }
@@ -367,7 +366,6 @@ h2 {
 /* Grid-items */
 .grid-item {
     position: relative; /* Relatieve positionering */
-    background-color: white; /* Witte achtergrondkleur */
     border-radius: 15px; /* Afgeronde hoeken */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Schaduw */
     overflow: hidden; /* Verberg overloop */
