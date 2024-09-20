@@ -8,8 +8,8 @@ De pagina's zijn gebouwd met **HTML**, **CSS** en **JavaScript**
 
 ## Over het project  
 
-1. Een **Squad Page** met een overzicht alle studenten van Squad 1G. Voor elk student wordt basisinformatie getoond, zoals hun naam, een foto en een link naar hun persoonlijke visitekaartje.
-2. Een pagina over de **Amstelcampus**, met informatie over het campus, de faciliteiten en waarom het een belangrijke locatie is voor studenten.
+1. Een **Squad Page** met een overzicht alle studenten van Squad 1G. Voor elk student wordt info getoond, zoals hun naam, een foto en een link naar hun persoonlijke visitekaartje.
+2. Een pagina over de **Amstelcampus**.
 
 **Het doel van dit project: **
 
