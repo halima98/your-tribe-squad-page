@@ -41,7 +41,10 @@ h4 {
     position: relative; /* Positionering ten opzichte van de parent */
     background-size: cover; /* Achtergrondafbeelding volledig bedekken */
     background-position: center; /* Achtergrondafbeelding centreren */
+<<<<<<< HEAD
     border-bottom: 16px solid #3d1a5d; /* Paarse rand onderaan */
+=======
+>>>>>>> a8bb77954a70f9ee8aebd5b1621b11999abd4d6e
 }
 
 /* Slider in de banner met 3D animatie */
@@ -324,6 +327,7 @@ h2 {
     }
 }
 
+<<<<<<< HEAD
 /* Sectie voor leiders */
 .leader-section {
     padding: 60px 0; /* Padding boven en onder */
@@ -368,6 +372,10 @@ h2 {
     text-align: center; /* Center uitlijning van tekst */
     margin-top: 20px; /* Marges boven */
 }
+=======
+
+
+>>>>>>> a8bb77954a70f9ee8aebd5b1621b11999abd4d6e
 
 /* Introductie sectie */
 .intro-section {
@@ -400,8 +408,12 @@ h2 {
     grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
     gap: 20px; /* Ruimte tussen items */
     padding: 40px; /* Padding rond de grid */
+<<<<<<< HEAD
     max-width: 1200px; /* Maximale breedte */
     width: 100%; /* Volledige breedte */
+=======
+    width: 80%; /* Volledige breedte */
+>>>>>>> a8bb77954a70f9ee8aebd5b1621b11999abd4d6e
     animation: fadeIn 1.5s ease-out; /* Fade-in animatie */
     margin: 0 auto; /* Auto-marges aan beide zijden om horizontaal te centreren */
 }
@@ -410,7 +422,10 @@ h2 {
 /* Grid-items */
 .grid-item {
     position: relative; /* Relatieve positionering */
+<<<<<<< HEAD
     background-color: white; /* Witte achtergrondkleur */
+=======
+>>>>>>> a8bb77954a70f9ee8aebd5b1621b11999abd4d6e
     border-radius: 15px; /* Afgeronde hoeken */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Schaduw */
     overflow: hidden; /* Verberg overloop */
@@ -521,6 +536,7 @@ h2 {
     }
 }
 
+<<<<<<< HEAD
 /* Footer */
 footer {
     text-align: center; /* Center uitlijning van tekst */
@@ -528,6 +544,8 @@ footer {
     background-color: #1c1c1c; /* Donkere achtergrondkleur */
     color: #e0e0e0; /* Lichtgrijze tekstkleur */
 }
+=======
+>>>>>>> a8bb77954a70f9ee8aebd5b1621b11999abd4d6e
 /* Media Queries voor responsief ontwerp */
 
 /* Voor schermen kleiner dan 960px */

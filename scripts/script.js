@@ -33,4 +33,3 @@ modal.addEventListener('click', (e) => {
         toggleSliderAnimation(false); // Hervat de animatie van de slider
     }
 });
-
