@@ -24,6 +24,7 @@ Deze leertaak wordt behandeld in week 2 en 3 van sprint 1. Er worden verschillen
 - [Squad page ontwerpen en maken](squad-page-ontwerpen-en-maken.md) - Maandag
 - [Team canvas](team-canvas.md) - Maandag
 - [Responsive Design](responsive-design.md) - Woensdag
+- [Code/Design review squadpage](code-design-review-squadpage.md) - Vrijdag
 - [Visuele Hiërarchie](visuele-hierarchie.md) - Week 2
 
 
